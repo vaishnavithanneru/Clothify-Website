@@ -1,0 +1,115 @@
+/* src/App.css - Beautiful Amazon-style design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #0f1111;
+  line-height: 1.5;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.py-6 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Toast notifications */
+.Toastify__toast {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+/* Responsive grid for products */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #ffd814;
+  color: #0f1111;
+}
+
+.btn-primary:hover {
+  background: #f7ca00;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ffd814;
+  color: #ffd814;
+}
+
+.btn-outline:hover {
+  background: #ffd814;
+  color: #0f1111;
+}
+
+/* Loading spinner */
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #666;
+}
+
+.empty h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
