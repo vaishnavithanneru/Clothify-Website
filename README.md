@@ -110,14 +110,12 @@ node server.js
 ```
 
 **Sample `.env`**
+Here I connect the MongoDb atlas Database connection String
 
 ```
+MONGO_URI=mongodb+srv://admin:iSlY1RRc412o8CPu@cluster0.rb4fzmi.mongodb.net/clothify?retryWrites=true&w=majority
+JWT_SECRET=supersecret123
 PORT=5000
-MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.mongodb.net/clothingdb?retryWrites=true&w=majority
-JWT_SECRET=some_long_random_secret
-NODE_ENV=development
-EMAIL_USER=your.email@gmail.com
-EMAIL_PASS=your_app_password_or_mailtrap_pass
 CLIENT_URL=http://localhost:3000
 ```
 
